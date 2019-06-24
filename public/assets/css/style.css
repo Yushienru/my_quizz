@@ -1,0 +1,66 @@
+.form-check-label {
+    margin-bottom: 4%;
+    margin-top: 2%;
+    
+}
+
+.titre_question {
+    color: white;
+}
+
+.card {
+    background: rgba(224, 220, 220, 0.527);
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.card:hover {
+    opacity: .5;
+}
+
+.questions {
+    
+    font-size: 20px;    
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 5%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+body {
+    font-family: Sniglet;
+    background-image: url('/img/multicolor.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.quizz_container {
+    background: rgba(224, 220, 220, 0.527);
+    border: 3px solid rgba(0, 0, 0, 0.616);
+    border-radius: 15px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.btn {
+    width: 30%;
+    height: 30%;
+    justify-content: center;
+}
+
+form.questions {
+    border: 1px solid rgb(156, 151, 151);
+    background-color: rgba(63, 61, 61, 0.65);
+    border-radius: 15px;
+    margin-bottom: 2%;
+    padding-left: 10px;
+
+}

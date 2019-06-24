@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="quizz_container">
+
+<h1>{{ category.name }}</h1>
+<br>
+
+{% for nimporte in category.question %}
+
+    <form action="" class="questions">
+
+        <h3 class="titre_question">{{ nimporte.question }}</h3>
+
+        {% for prout in nimporte.reponse | sortbyfield('reponse') %}
+
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optradio">{{ prout.reponse }}
+            </label>
+        </div>
+
+        {% endfor %}
+
+        
+    </form>
+    {% endfor %}
+    <button type="button" class="btn btn-info">Résultats</button
+
+</div>
+
+
+{% endblock %}
