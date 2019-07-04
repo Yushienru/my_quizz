@@ -48,6 +48,10 @@ class User
      */
     private $role;
 
+    public function __construct() {
+        $this->created_at = new \DateTime('now');
+    }
+
     public function getId(): ?int
     {
         return $this->id;
@@ -96,7 +100,7 @@ class User
 
     public function setPassword(string $password): self
     {
-        $this->password = $password;
+        $this->password = password_hash($password, PASSWORD_BCRYPT) ;
 
         return $this;
     }

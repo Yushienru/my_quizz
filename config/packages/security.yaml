@@ -1,13 +1,16 @@
 security:
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
+    encoders:
+        App\Entity\User:
+            algorithm: 'auto'
     providers:
         in_memory: { memory: ~ }
     firewalls:
-        dev:
-            pattern: ^/(_(profiler|wdt)|css|images|js)/
-            security: false
         main:
-            anonymous: true
+            anonymous: ~
+            form_login:
+                login_path: login
+                check_path: login
 
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#firewalls-authentication
